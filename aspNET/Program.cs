@@ -17,6 +17,7 @@ namespace aspNET
             CreateHostBuilder(args).Build().Run();
         }
 
+        // Ask what this down here does to the Main
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>

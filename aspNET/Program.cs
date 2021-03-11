@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace aspNET
 {
@@ -13,16 +14,16 @@ namespace aspNET
     {
         public static void Main(string[] args)
         {
-            IHostBuilder hostBuilder = Host.CreateDefaultBuilder(args);
-            CreateHostBuilder(args).Build().Run();
-        }
+            Debug.WriteLine("Test test test");
+            Console.WriteLine("Test2 test2 test2");
 
-        // Ask what this down here does to the Main
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+            IHostBuilder hostBuilder = Host.CreateDefaultBuilder(args);
+            hostBuilder.ConfigureWebHostDefaults(WebHostBuilder =>
+            {
+                WebHostBuilder.UseStartup<Startup>();
+            });
+            IHost webHost = hostBuilder.Build();
+            webHost.Run();
+        }
     }
 }

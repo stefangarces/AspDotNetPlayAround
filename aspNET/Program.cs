@@ -14,8 +14,8 @@ namespace aspNET
     {
         public static void Main(string[] args)
         {
-            Debug.WriteLine("Test test test");
-            Console.WriteLine("Test2 test2 test2");
+            Debug.WriteLine("Console in debug mode");
+            Console.WriteLine("Console in terminal mode");
 
             IHostBuilder hostBuilder = Host.CreateDefaultBuilder(args);
             hostBuilder.ConfigureWebHostDefaults(WebHostBuilder =>

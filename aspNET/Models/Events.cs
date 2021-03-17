@@ -13,5 +13,6 @@ namespace aspNET.Models
         public string Adress { get; set; }
         public DateTime Date { get; set; }
         public bool ticketsAvailable { get; set; }
+        public Organizer OrgID { get; set; }
     }
 }

@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using aspNET.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace aspNET
 {
@@ -25,6 +27,8 @@ namespace aspNET
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DataContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

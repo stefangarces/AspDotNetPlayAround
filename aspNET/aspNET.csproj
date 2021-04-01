@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Eventss\" />
+    <Folder Include="Pages\Event\" />
   </ItemGroup>
 
 </Project>

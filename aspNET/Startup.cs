@@ -1,16 +1,10 @@
+﻿using aspNET.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Diagnostics;
-using System.Threading.Tasks;
-using aspNET.Data;
-using Microsoft.EntityFrameworkCore;
 
 namespace aspNET
 {
@@ -50,7 +44,7 @@ namespace aspNET
 
             app.UseRouting();
 
-            //app.UseAuthorization();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

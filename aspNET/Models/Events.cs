@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace aspNET.Models
+﻿namespace aspNET.Models
 {
     public class Events
-    {
+    {/*
         public string Title { get; set; }
         public string Description { get; set; }
         public string Place { get; set; }
@@ -14,5 +9,6 @@ namespace aspNET.Models
         public DateTime Date { get; set; }
         public bool ticketsAvailable { get; set; }
         public Organizer OrgID { get; set; }
+    */
     }
 }

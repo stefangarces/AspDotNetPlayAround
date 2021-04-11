@@ -1,4 +1,6 @@
-﻿namespace aspNET.Models
+﻿using System;
+
+namespace aspNET.Models
 {
     public class Events
     {
@@ -9,6 +11,6 @@
         public DateTime Date { get; set; }
         public bool ticketsAvailable { get; set; }
         public Organizer OrgID { get; set; }
-    
+
     }
 }
